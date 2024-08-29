@@ -86,7 +86,7 @@ function fnGuideMove(muki, articleNo) {
 		tags += "<td>" + articleRoom + "</td>";
 
 		// 鍵情報の作成
-		tags += "<td>" + articleKey;
+		tags += "<td>" + articleKey + "</td>";
 		tags += "</tr>";
 
 		// 登録側に追加
@@ -105,7 +105,6 @@ function fnGuideMove(muki, articleNo) {
 		tags += "<td>" + $(obj.children()[1]).html() + "</td>";
 
 		// 部屋番号の作成
-		tags += "<td>" + $(obj.children()[2]).text() + "</td>";
 		tags += "<td>" + $(obj.children()[2]).html() + "</td>";
 
 		// 鍵情報の作成
