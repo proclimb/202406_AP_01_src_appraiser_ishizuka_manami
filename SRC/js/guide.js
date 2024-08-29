@@ -64,9 +64,9 @@ function fnGuideMove(muki, articleNo) {
 		var obj = $("#s" + articleNo);
 
 		// 名称の取得
-		var articleName = $(obj.children()[0]).text();
-		var articleRoom = $(obj.children()[1]).text();
-		var articleKey = $(obj.children()[2]).text();
+		var articleName = $(obj.children()[0]).html();
+		var articleRoom = $(obj.children()[1]).html();
+		var articleKey = $(obj.children()[2]).html();
 
 		// 登録リストに保存(右側に移動)
 		tags = "<tr id=\"r" + articleNo + "\">";
@@ -123,7 +123,7 @@ function fnGuideMove(muki, articleNo) {
 	}
 
 	// 色の再設定
-	$("#search tr").filter(":odd").find("td").attr("class", "list_td1");
+	$("#search tr").filter(":odd").find("td").attr("class", "list_td0");
 	$("#search tr").filter(":even").find("td").attr("class", "list_td1");
 	$("#regist tr").filter("odd").find(".td").attr("class", "list_td0");
 	$("#regist tr").filter("even").find(".td").attr("class", "list_td1");
