@@ -50,8 +50,8 @@ function fnFManagerViewEditCheck() {
 		return;
 	}
 
-	tmp = form.pdfFile.value;
-	if (!form.pdfNo.value && tmp.slice(-4) != '.pdf' && tmp.slice(-4) != '.PDF') {
+	ttmp = form.pdfFile.value;
+	if (tmp.slice(-4) != '.pdf' && tmp.slice(-4) != '.PDF') {
 		alert('PDFファイルを指定してください');
 		return;
 	}
